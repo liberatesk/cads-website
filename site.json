@@ -1,0 +1,49 @@
+{
+  "company_name": "Control Alt Defeat",
+  "hero_headline": "IT Solutions That Work For Your Business",
+  "hero_subtext": "Take control. Defeat complexity. Transform your business.",
+  "hero_cta_primary": "Schedule Consultation",
+  "hero_cta_secondary": "Explore Our Services",
+  "services_headline": "Comprehensive IT Solutions",
+  "services_subtext": "We provide tailored IT consulting services to meet your business needs.",
+  "services": [
+    {
+      "name": "Technology Consulting",
+      "icon": "settings",
+      "description": "Strategic technology planning and implementation to align with your business goals. Our experts provide guidance on the latest technologies and best practices.",
+      "bullets": ["IT Strategy Development", "Digital Transformation", "Technology Assessment"]
+    },
+    {
+      "name": "Data Center Solutions",
+      "icon": "database",
+      "description": "Optimize your data center operations with our comprehensive solutions. We design, implement, and manage efficient data center infrastructures.",
+      "bullets": ["Data Center Design", "Server Virtualization", "Cloud Migration"]
+    },
+    {
+      "name": "Network Infrastructure",
+      "icon": "network",
+      "description": "Build robust and secure network infrastructure to support your business operations. We ensure reliable connectivity and optimal performance.",
+      "bullets": ["Network Design & Implementation", "Wireless Solutions", "Network Security"]
+    },
+    {
+      "name": "Operational & Logistics Strategy",
+      "icon": "layout-grid",
+      "description": "Streamline your operations and logistics with our strategic planning and implementation services. We help optimize your business processes.",
+      "bullets": ["Process Optimization", "Supply Chain Management", "Resource Planning"]
+    }
+  ],
+  "about_headline": "Why Choose Control Alt Defeat?",
+  "about_text": "With years of experience in the IT industry, our team of experts is dedicated to providing top-notch consulting services to businesses of all sizes.",
+  "about_bullets": [
+    "Expert Team with Industry Experience",
+    "Customized Solutions for Your Business",
+    "Proven Track Record of Success",
+    "Ongoing Support and Maintenance"
+  ],
+  "contact_headline": "Get in Touch",
+  "contact_subtext": "Ready to transform your IT infrastructure? Contact us today to schedule a consultation.",
+  "address": "1262 W Jefferson Blvd #88, Los Angeles, CA 90007",
+  "phone": "(323) 513-6329",
+  "email": "contact@controlaltdefeat.org",
+  "footer_text": "© 2025 Control Alt Defeat. All rights reserved."
+}

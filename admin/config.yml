@@ -1,0 +1,111 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "Website Content"
+    files:
+      - name: "site"
+        label: "Edit Website"
+        file: "site.json"
+        format: json
+        fields:
+          - label: "Company Name"
+            name: "company_name"
+            widget: "string"
+            hint: "Appears in the header and footer"
+
+          - label: "Hero Headline"
+            name: "hero_headline"
+            widget: "string"
+            hint: "The big text at the top of the page"
+
+          - label: "Hero Subtext"
+            name: "hero_subtext"
+            widget: "string"
+            hint: "The smaller text under the headline"
+
+          - label: "Primary Button Text"
+            name: "hero_cta_primary"
+            widget: "string"
+
+          - label: "Secondary Button Text"
+            name: "hero_cta_secondary"
+            widget: "string"
+
+          - label: "Services Section Headline"
+            name: "services_headline"
+            widget: "string"
+
+          - label: "Services Section Subtext"
+            name: "services_subtext"
+            widget: "string"
+
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - {label: "Service Name", name: "name", widget: "string"}
+              - label: "Icon"
+                name: "icon"
+                widget: "select"
+                options:
+                  - {label: "Settings / Gear", value: "settings"}
+                  - {label: "Database", value: "database"}
+                  - {label: "Network", value: "network"}
+                  - {label: "Grid / Layout", value: "layout-grid"}
+                  - {label: "Shield / Security", value: "shield"}
+                  - {label: "Cloud", value: "cloud"}
+                  - {label: "Server", value: "server"}
+                  - {label: "Laptop", value: "laptop"}
+                  - {label: "Code", value: "code"}
+                  - {label: "Wifi", value: "wifi"}
+              - {label: "Description", name: "description", widget: "text"}
+              - label: "Bullet Points"
+                name: "bullets"
+                widget: "list"
+                field: {label: "Item", name: "item", widget: "string"}
+
+          - label: "About Section Headline"
+            name: "about_headline"
+            widget: "string"
+
+          - label: "About Section Text"
+            name: "about_text"
+            widget: "text"
+
+          - label: "About Bullet Points"
+            name: "about_bullets"
+            widget: "list"
+            field: {label: "Item", name: "item", widget: "string"}
+
+          - label: "Contact Section Headline"
+            name: "contact_headline"
+            widget: "string"
+
+          - label: "Contact Section Subtext"
+            name: "contact_subtext"
+            widget: "string"
+
+          - label: "Address"
+            name: "address"
+            widget: "string"
+            hint: "Your business address shown on the contact section"
+
+          - label: "Phone"
+            name: "phone"
+            widget: "string"
+
+          - label: "Email"
+            name: "email"
+            widget: "string"
+
+          - label: "Footer Text"
+            name: "footer_text"
+            widget: "string"
+            hint: "e.g. © 2025 Control Alt Defeat. All rights reserved."

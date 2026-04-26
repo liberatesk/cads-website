@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+
+# Redirect /admin to the CMS panel
+[[redirects]]
+  from = "/admin"
+  to   = "/admin/index.html"
+  status = 200
+
+# Make sure form submissions work
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
