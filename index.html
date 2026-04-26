@@ -12,6 +12,15 @@
   </script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    // Redirect Netlify Identity tokens to /admin so Decap CMS handles them
+    (function() {
+      var hash = window.location.hash;
+      if (hash && (hash.includes('invite_token') || hash.includes('recovery_token') || hash.includes('confirmation_token'))) {
+        window.location.replace('/admin/' + hash);
+      }
+    })();
+  </script>
   <style>
     /* ── Typography ── */
     body {
